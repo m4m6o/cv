@@ -1,0 +1,144 @@
+\documentclass[11pt]{spidercv}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+
+\begin{document}
+
+    %----------------------------------------------------------------------------------------
+    %	TOP BAR
+    %----------------------------------------------------------------------------------------
+    \begin{TopBar}{\ColorTextSide}
+        \Name{\ColorHighlight}{Salavatov Ilya}{}{19 years old}
+
+        %%% Contact
+        \TextSeparator{\ColorHighlight}{Contact}
+        \begin{DoubleColumns}
+            \begin{ItemList}{\ColorHighlight}
+                \item [\Large\faAt] \href{mailto:ilya.salavatov@mail.ru}{ilya.salavatov@mail.ru}
+                \item [\Large\faMobile] +7 777 688 16 86
+            \end{ItemList}
+            \nextcolumn
+            \begin{ItemList}{\ColorHighlight}
+                \item [\Large\faGithub] \href{https://github.com/m4m6o}{m4m6o}
+                \item [\Large\faMapMarker] Almaty, Kazakhstan
+            \end{ItemList}
+        \end{DoubleColumns}
+
+        %%% Interests
+        \TextSeparator{\ColorHighlight}{Scientific Interests}
+        \begin{TripleColumns}
+            \begin{ItemList}{\ColorHighlight}
+                \item [] 3D Reconstruction
+            \end{ItemList}
+            \nextcolumn
+            \begin{ItemList}{\ColorHighlight}
+                \item [] Map Representation
+            \end{ItemList}
+            \nextcolumn
+            \begin{ItemList}{\ColorHighlight}
+                \item [] Machine Learning
+            \end{ItemList}
+        \end{TripleColumns}
+    \end{TopBar}
+
+
+
+    %----------------------------------------------------------------------------------------
+    %	SIDE BAR
+    %----------------------------------------------------------------------------------------
+    \begin{SideBar}{\ColorBackground}{\ColorTextSide}
+        
+        %%% Soft skills
+        \TextSeparatorBis{\ColorHighlight}{\faUser}{Soft skills}
+        
+        \Label{\ColorHighlight}{Communication}
+        \Label{\ColorHighlight}{Curiosity}
+        \Label{\ColorHighlight}{Critical Thinking}
+        \Label{\ColorHighlight}{Team Player}
+        \Label{\ColorHighlight}{Research}
+        \Label{\ColorHighlight}{Attention to detail}
+        
+        \vspace*{1cm}
+
+        %%% Hard skills
+        \TextSeparatorBis{\ColorHighlight}{\faGears}{Hard skills}
+        \begin{ItemList}{\ColorHighlight}
+            \item [\faCode] Python, C++, SQL, C Sharp, Java, JavaScript
+            \item [\faCubes]  Unity, Unreal Engine, Blender, ZBrush, Wrap/ZWrap
+            \item [\faGear]  Spark, Git, etc
+        \end{ItemList}
+
+        \vspace*{1cm}
+
+        %%% Languages
+        \TextSeparatorBis{\ColorHighlight}{\faLanguage}{Languages}
+
+        \begin{SkillGauges}{\ColorHighlight}
+            \addGauge{English}{4}
+            \addGauge{Russian}{5}
+            \addGauge{Kazakh}{2}
+        \end{SkillGauges}
+    \end{SideBar}
+
+    
+
+    %----------------------------------------------------------------------------------------
+    %	Picture
+    %----------------------------------------------------------------------------------------
+    \DefineProfile{\ColorOther}{\ColorTextSide}{img.jpg}
+
+
+
+
+    %----------------------------------------------------------------------------------------
+    %	Main
+    %----------------------------------------------------------------------------------------
+    \begin{MainPart}
+
+    %%% Experiences 
+    \MainTitleBis{\ColorHighlight}{\ColorTextMain}{About Me}{\faSuitcase}
+    \Experience
+        {\ColorHighlight}
+		{3D Graphics}
+		{}
+        {2016-2017\faUndo}
+        {   
+            In his free time and during the summer holidays he was engaged in the development of games: 2d platformer, sandbox and indie horror. I developed for them my own concept of models and their rendering.
+        }
+    \Experience
+        {\ColorHighlight}
+		{Programming}
+		{}
+        {2017-Nowhere}
+        {   
+            I created neural networks for object recognition, pose and actions estimation. I also programmed the reconstruction of the area in 3D.
+        }
+
+    
+    %%% Activities
+    \MainTitleBis{\ColorHighlight}{\ColorTextMain}{Projects}{\faUsers}
+    \vspace*{0.5cm}
+    \begin{DoubleColumns}
+        \begin{ItemList}{\ColorHighlight}
+            \item [] "Taskee" - social networking service (mobile app and website)
+            \item [] "Nearest clinic" - according to data from the smartwatch, can show the way to the nearest point of assistance or call an ambulance (mobile app)
+        \end{ItemList}
+        \begin{ItemList}{\ColorHighlight}
+            \item [] "Loud Mountains" - indie horror
+            \item [] "Virtual Earth" - everyone can upload a video with a walk somewhere and then see the full 3d reconstruction model of the area
+        \end{ItemList}
+        \begin{ItemList}{\ColorHighlight}
+            \item [] "Handrick" - Python program that recognizes bullying according to data from cameras
+            \item [] "Sancho Panza" - small robot cart that follows a human. carrying heavy loads 
+        \end{ItemList}
+    \end{DoubleColumns}
+
+    \end{MainPart}
+
+    
+
+\end{document}
+
+
